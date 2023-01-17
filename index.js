@@ -24,7 +24,7 @@ const server = http.createServer(async (req, res) => {
 
         res.write(result);
 
-        //втори вариянт без async
+        //втори вариaнт без async
         // fs.readFile('./views/home/index.html',{encoding:'utf-8'})
         // .then(homePage=>{res.write(homePage)}).catch(err=>{conole.log(err)});
 
