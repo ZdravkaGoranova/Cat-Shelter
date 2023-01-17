@@ -73,7 +73,7 @@ function catTamplate(cat) {
 
     return modifiedHtml;
 
-    //Втори вариянт без reduce
+    //Втори вариaнт без reduce
     // let result = html.replaceAll('{{name}}', cat.name);
     // result = result.replace('{{breed}}', cat.breed);
     // result = result.replace('{{imageUrl}}', cat.imageUrl);
