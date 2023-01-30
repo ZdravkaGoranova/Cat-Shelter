@@ -14,12 +14,12 @@ app.use(express.static('src/public'));
 app.get('/', (req, res) => {
     res.render('index')
 });
-app.get('/addBreed', () => {
-
+app.get('/addCat', (req, res) => {
+    res.render('addCat')
 });
-app.get('/addCat', () => {
-
-});
+app.get('/addBreed', (req, res) => {
+    res.render('addBreed')
+    });
 app.get('/', () => {
 
 });
