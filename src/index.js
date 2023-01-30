@@ -12,7 +12,7 @@ app.use(express.static('src/public'));
 
 
 app.get('/', (req, res) => {
-    res.render('home')
+    res.render('index')
 });
 app.get('/addBreed', () => {
 
