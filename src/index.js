@@ -1,12 +1,16 @@
 console.log("Start coding sait ...");
 
 const express = require('express');
+
+const config = require('./config/index.js');// require('./config');
 const app = express();
 
-const config = require('./config/config.js');
+const setupViewEngine = require('./config/viewEngine.js');//require('./config/viewEngine.js')(app)
+setupViewEngine(app);
+
 
 app.get('/', (req, res) => {
-    res.send('Home page')
+    res.render('home')
 });
 app.get('/addBreed', () => {
 
