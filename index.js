@@ -5,7 +5,7 @@ const fss = require('fs');
 const querystring = require('querystring');
 
 
-const cats = require('./cats.json');
+const db = require('./db.json');
 
 //Зареждаме страниците от string документ
 // const homePage = require('./viewsOld');//homePage= require('./views/index.js');

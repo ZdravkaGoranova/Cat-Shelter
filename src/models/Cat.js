@@ -9,12 +9,12 @@ class Cat {
         this.image = image;
         this.breed = breed;
     }
-    static  save(cat) {
+    save() {
+        this.id = db.cats[db.cats - 1].id + 1;
+        db.cats.push(this);
+        const jsonData = JSON.stringify(db,null,2);
 
-        db.cats.push(cat);
-        const jsonData = JSON.stringify(db);
-
-         fs.writeFileSync(path.resolve(__dirname, '../../db.json', jsonData))
+        fs.writeFileSync(path.resolve(__dirname, '../../db.json', jsonData))
 
     }
 }
