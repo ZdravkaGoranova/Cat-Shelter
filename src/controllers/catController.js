@@ -7,8 +7,6 @@ exports.getCreateCat = (req, res) => {
 exports.postCreateCat = async (req, res) => {
 // let form = new formidable.IncomingForm();
 // let imgUrl='';
-
-
     console.log(req.body)
     res.send('Form submittet')
 
