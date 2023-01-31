@@ -8,7 +8,7 @@ exports.postCreateCat = async (req, res) => {
 // let form = new formidable.IncomingForm();
 // let imgUrl='';
     console.log(req.body)
-    res.send('Form submittet')
+   // res.send('Form submittet')
 
     // //save
     const { name, description, image, breed } = req.body
@@ -16,5 +16,5 @@ exports.postCreateCat = async (req, res) => {
     await cat.save();
 
     // //redirect
-    res.redirect('/')
+    res.redirect('/');
 };
