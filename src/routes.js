@@ -10,8 +10,9 @@ const breedController = require('./controllers/breedController.js')
 router.get('/', homeController.getHomePage);
 
 router.get('/addCat', catController.getCreateCat)
+router.post('/addCat', catController.postCreateCat)
 
 router.get('/addBreed', breedController.getCreateBreed);
-
+router.post('/addBreed', breedController.postCreateBreed);
 
 module.exports = router;

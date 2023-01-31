@@ -12,7 +12,7 @@ setupViewEngine(app);
 
 
 app.use(express.static('src/public'));
-
+app.use(express.urlencoded({ extended: true }))
 app.use(routes);
 
 app.listen(config.PORT, () => {
